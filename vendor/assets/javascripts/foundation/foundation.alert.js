@@ -17,6 +17,9 @@
     },
 
     events : function () {
+
+      var self = this;
+
       $(this.scope).off('.alert').on('click.fndtn.alert', '[data-alert] a.close', function (e) {
           var alertBox = $(this).closest("[data-alert]"),
               settings = alertBox.data('alert-init') || self.settings;
