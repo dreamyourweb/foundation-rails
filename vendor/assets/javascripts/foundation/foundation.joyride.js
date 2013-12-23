@@ -120,7 +120,7 @@
 
       if (!this.settings.init) this.events();
 
-      this.settings = $this.data('joyride-init');
+      this.settings = $this.data('joyride-init') || this.settings;
 
       // non configureable settings
       this.settings.$content_el = $this;
